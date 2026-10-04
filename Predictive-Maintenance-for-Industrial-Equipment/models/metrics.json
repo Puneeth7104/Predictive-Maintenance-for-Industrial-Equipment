@@ -1,0 +1,145 @@
+{
+  "model_name": "Gradient Boosting (balanced)",
+  "horizon_h": 24,
+  "recall_target": 0.8,
+  "dataset": {
+    "rows_after_features": 84651,
+    "machines": 20,
+    "failures": 89,
+    "positive_rate": 0.02523301555799695,
+    "n_features": 32,
+    "train_rows": 50800,
+    "val_rows": 12209,
+    "test_rows": 20694,
+    "train_end": "2026-04-19 08:00:00",
+    "test_start": "2026-05-17 06:00:00",
+    "test_end": "2026-06-29 23:00:00"
+  },
+  "selected_test": {
+    "threshold": 0.9983915176254052,
+    "precision": 0.9245283018867925,
+    "recall": 0.6496212121212122,
+    "f1": 0.7630700778642937,
+    "pr_auc": 0.7796013878674762,
+    "roc_auc": 0.9512009131030628,
+    "confusion_matrix": [
+      [
+        20138,
+        28
+      ],
+      [
+        185,
+        343
+      ]
+    ],
+    "failures_in_test": 22,
+    "failures_caught": 22,
+    "failure_catch_rate": 1.0,
+    "mean_lead_time_h": 16.363636363636363,
+    "alert_episodes": 24,
+    "false_alarm_episodes": 2,
+    "false_alarms_per_machine_week": 0.016015252621544327
+  },
+  "comparison": [
+    {
+      "model": "Logistic (no weights)",
+      "val_pr_auc": 0.937410642325422,
+      "test_threshold": 0.6667535098706278,
+      "test_precision": 0.910025706940874,
+      "test_recall": 0.6704545454545454,
+      "test_f1": 0.772082878953108,
+      "test_pr_auc": 0.7940778384009898,
+      "test_roc_auc": 0.9557707016610615
+    },
+    {
+      "model": "Logistic (balanced)",
+      "val_pr_auc": 0.903143227806645,
+      "test_threshold": 0.9725896258931905,
+      "test_precision": 0.8004640371229699,
+      "test_recall": 0.6534090909090909,
+      "test_f1": 0.7194994786235662,
+      "test_pr_auc": 0.7667306050840127,
+      "test_roc_auc": 0.965026078998855
+    },
+    {
+      "model": "Random Forest (balanced)",
+      "val_pr_auc": 0.9322707916230728,
+      "test_threshold": 0.897303278130381,
+      "test_precision": 0.928,
+      "test_recall": 0.6590909090909091,
+      "test_f1": 0.770764119601329,
+      "test_pr_auc": 0.790398008705682,
+      "test_roc_auc": 0.951298070710076
+    },
+    {
+      "model": "Random Forest (undersampled 5:1)",
+      "val_pr_auc": 0.9267841429150732,
+      "test_threshold": 0.9335139472455648,
+      "test_precision": 0.9242819843342036,
+      "test_recall": 0.6704545454545454,
+      "test_f1": 0.7771679473106476,
+      "test_pr_auc": 0.8096612946215647,
+      "test_roc_auc": 0.9648834183849805
+    },
+    {
+      "model": "Gradient Boosting (balanced)",
+      "val_pr_auc": 0.9387736104975679,
+      "test_threshold": 0.9983915176254052,
+      "test_precision": 0.9245283018867925,
+      "test_recall": 0.6496212121212122,
+      "test_f1": 0.7630700778642937,
+      "test_pr_auc": 0.7796013878674762,
+      "test_roc_auc": 0.9512009131030628
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "vibration_std_24",
+      "importance": 0.02645644216671757
+    },
+    {
+      "feature": "vibration_diff_24",
+      "importance": 0.012167110019658126
+    },
+    {
+      "feature": "vibration",
+      "importance": 0.011661855107837274
+    },
+    {
+      "feature": "vibration_dev_baseline",
+      "importance": 0.009310355727363495
+    },
+    {
+      "feature": "hours_since_maintenance",
+      "importance": 0.008862592279469395
+    },
+    {
+      "feature": "temperature_diff_24",
+      "importance": 0.0046418942311249696
+    },
+    {
+      "feature": "vibration_diff_6",
+      "importance": 0.0027467247192321334
+    },
+    {
+      "feature": "vibration_min_24",
+      "importance": 0.002580605113515803
+    },
+    {
+      "feature": "temperature_mean_24",
+      "importance": 0.0016832036407403346
+    },
+    {
+      "feature": "pressure_diff_24",
+      "importance": 0.001633725444486515
+    },
+    {
+      "feature": "pressure_min_24",
+      "importance": 0.0016328461677015405
+    },
+    {
+      "feature": "pressure_mean_24",
+      "importance": 0.001510319150793249
+    }
+  ]
+}

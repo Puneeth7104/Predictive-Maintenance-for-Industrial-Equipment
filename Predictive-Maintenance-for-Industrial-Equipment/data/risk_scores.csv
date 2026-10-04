@@ -1,0 +1,21 @@
+machine_id,machine_type,timestamp,risk_score,risk_level,temperature,vibration,pressure,hours_since_maintenance,main_driver
+M06,Pump,2026-06-29 23:00:00,1.0,High,89.776,5.019,82.948,878,vibration +6.3σ vs baseline
+M17,Motor,2026-06-29 10:00:00,1.0,Offline,87.739,4.853,75.848,921,vibration +4.7σ vs baseline
+M18,Motor,2026-06-29 23:00:00,0.9999,High,88.017,4.457,83.306,347,vibration +6.2σ vs baseline
+M03,Compressor,2026-06-29 23:00:00,0.0056,Low,71.496,2.445,96.738,593,pressure +0.9σ vs baseline
+M19,Compressor,2026-06-29 23:00:00,0.004,Low,71.007,2.345,98.382,425,temperature -0.5σ vs baseline
+M01,Pump,2026-06-29 23:00:00,0.0003,Low,75.189,2.479,102.786,571,pressure +0.6σ vs baseline
+M08,Compressor,2026-06-29 23:00:00,0.0001,Low,73.975,2.548,95.909,121,temperature -0.6σ vs baseline
+M02,Pump,2026-06-29 23:00:00,0.0001,Low,74.013,2.156,99.311,443,pressure +0.8σ vs baseline
+M20,Compressor,2026-06-29 23:00:00,0.0,Low,80.176,2.275,100.27,620,temperature -0.4σ vs baseline
+M13,Motor,2026-06-29 23:00:00,0.0,Low,76.144,2.549,95.426,817,pressure +1.1σ vs baseline
+M15,Pump,2026-06-29 23:00:00,0.0,Low,72.758,2.144,105.102,584,pressure +0.6σ vs baseline
+M07,Pump,2026-06-29 23:00:00,0.0,Low,75.937,1.931,92.786,480,temperature -0.5σ vs baseline
+M09,Compressor,2026-06-29 23:00:00,0.0,Low,74.817,2.21,101.038,281,vibration -0.6σ vs baseline
+M05,Compressor,2026-06-29 23:00:00,0.0,Low,71.082,2.595,98.43,177,temperature -0.9σ vs baseline
+M16,Motor,2026-06-29 23:00:00,0.0,Low,70.349,2.396,103.802,260,temperature -0.6σ vs baseline
+M12,Compressor,2026-06-29 23:00:00,0.0,Low,67.534,2.22,98.146,350,pressure +1.3σ vs baseline
+M11,Compressor,2026-06-29 23:00:00,0.0,Low,77.126,2.136,99.894,55,temperature -0.5σ vs baseline
+M10,Pump,2026-06-29 23:00:00,0.0,Low,76.966,2.2,96.052,190,pressure +0.9σ vs baseline
+M14,Motor,2026-06-29 23:00:00,0.0,Low,72.667,2.298,107.222,109,vibration -0.5σ vs baseline
+M04,Motor,2026-06-29 23:00:00,0.0,Low,71.208,2.1,106.858,347,pressure +0.9σ vs baseline
